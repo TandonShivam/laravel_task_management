@@ -19,7 +19,7 @@
             <tbody>
                 @foreach ($tasks as $task)
                     <tr>
-                        <td>{{ $task->id }}</td>
+                        <td>{{ $loop->iteration }}</td>
                         <td>{{ $task->title }}</td>
                         <td>{{ $task->description ?? 'N/A' }}</td>
                         <td>
